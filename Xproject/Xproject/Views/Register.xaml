@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Xproject.Register">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Register!"  Margin="45"
+                HorizontalOptions="CenterAndExpand" />
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="75"></RowDefinition>
+                    <RowDefinition Height="75"></RowDefinition>
+                    <RowDefinition Height="75"></RowDefinition>
+                    <RowDefinition Height="75"></RowDefinition>
+                    
+                </Grid.RowDefinitions>
+                <Entry Placeholder="Username" Text="{Binding Username, Mode=TwoWay }"  BackgroundColor="AliceBlue"  Grid.Row="0" Grid.ColumnSpan="2" WidthRequest="250"  HorizontalOptions="Center" Margin="15"></Entry>
+                <Entry Placeholder="Password" Text="{Binding   Password , Mode=TwoWay }"  IsPassword="True" Grid.Row="1" Grid.ColumnSpan="2"  WidthRequest="250" BackgroundColor="AliceBlue" HorizontalOptions="Center" Margin="15"></Entry>
+                <Entry Placeholder="Confirm your password" Text="{Binding Confirmation, Mode=TwoWay}"  IsPassword="True" BackgroundColor="AliceBlue"  Grid.Row="2" Grid.ColumnSpan="2"  WidthRequest="250"  HorizontalOptions="Center" Margin="15"></Entry>
+                <Entry Placeholder="email"  Grid.Row="3" Text="{Binding Email, Mode=TwoWay}"  Grid.ColumnSpan="2"  WidthRequest="250" BackgroundColor="AliceBlue" HorizontalOptions="Center" Margin="15"></Entry>
+                
+
+
+            </Grid>
+            <Label Text="{Binding Message, Mode=TwoWay }" HorizontalOptions="Center"  TextColor="Red"></Label>
+            <Button  Text="Sign Up"  Clicked="Button_Clicked" Command="{Binding SubmitCommand}" HorizontalOptions="Center"   WidthRequest="150" ></Button>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

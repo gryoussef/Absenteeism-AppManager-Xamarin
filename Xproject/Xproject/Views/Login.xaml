@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Xproject.Login"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <ContentPage.Content>
+        <StackLayout >
+            <ContentView Margin="50">
+                <Image Source="images.png" WidthRequest="120" HeightRequest="120" HorizontalOptions="Center"></Image>
+            </ContentView>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"></RowDefinition>
+                    <RowDefinition Height="70"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Entry  x:Name="Username" Text="{Binding Username, Mode=TwoWay }" Placeholder="Username" BackgroundColor="AliceBlue"  Grid.Row="0" Grid.ColumnSpan="2" HeightRequest="22" WidthRequest="250"  HorizontalOptions="Center"  Margin="15"></Entry>
+                <Entry  x:Name="Password" Text="{Binding Password, Mode=TwoWay }" Placeholder="Password" IsPassword="True" Grid.Row="1" Grid.ColumnSpan="2" HeightRequest="22" WidthRequest="250" BackgroundColor="AliceBlue" HorizontalOptions="Center" Margin="15"></Entry>
+
+
+                <Button Grid.Row="2"  Grid.ColumnSpan="1" Grid.Column="0" Command="{Binding LoginCommand}" Text="Login In" Clicked="Button_Clicked"  WidthRequest="30" ></Button>
+                <Button  Grid.Row="2" Grid.ColumnSpan="1" Grid.Column="1"  Text="Register" Clicked="Button_Clicked_1" WidthRequest="30" ></Button>
+               
+
+            </Grid>
+            
+                <Label Text="{Binding Message, Mode=TwoWay }" HorizontalOptions="Center" Margin="15" TextColor="Red"></Label>
+            <Label Text="you forgot your password?"  HorizontalOptions="Center" Margin="15"></Label>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

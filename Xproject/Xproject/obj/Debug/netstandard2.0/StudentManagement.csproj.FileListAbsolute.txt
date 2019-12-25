@@ -1,0 +1,14 @@
+E:\projectx\StudentManagement\StudentManagement\bin\Debug\netstandard2.0\StudentManagement.deps.json
+E:\projectx\StudentManagement\StudentManagement\bin\Debug\netstandard2.0\StudentManagement.dll
+E:\projectx\StudentManagement\StudentManagement\bin\Debug\netstandard2.0\StudentManagement.pdb
+E:\projectx\StudentManagement\StudentManagement\obj\Debug\netstandard2.0\StudentManagement.csprojAssemblyReference.cache
+E:\projectx\StudentManagement\StudentManagement\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\projectx\StudentManagement\StudentManagement\obj\Debug\netstandard2.0\Views\Login.xaml.g.cs
+E:\projectx\StudentManagement\StudentManagement\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+E:\projectx\StudentManagement\StudentManagement\obj\Debug\netstandard2.0\Views\Register.xaml.g.cs
+E:\projectx\StudentManagement\StudentManagement\obj\Debug\netstandard2.0\StudentManagement.csproj.CoreCompileInputs.cache
+E:\projectx\StudentManagement\StudentManagement\obj\Debug\netstandard2.0\StudentManagement.AssemblyInfoInputs.cache
+E:\projectx\StudentManagement\StudentManagement\obj\Debug\netstandard2.0\StudentManagement.AssemblyInfo.cs
+E:\projectx\StudentManagement\StudentManagement\obj\Debug\netstandard2.0\XamlC.stamp
+E:\projectx\StudentManagement\StudentManagement\obj\Debug\netstandard2.0\StudentManagement.dll
+E:\projectx\StudentManagement\StudentManagement\obj\Debug\netstandard2.0\StudentManagement.pdb
