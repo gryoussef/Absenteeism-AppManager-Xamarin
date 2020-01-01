@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Xproject.Views.AddEtudiant"
+              NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="Ajouter un nouveau étudiant!"  Margin="20"
+                HorizontalOptions="CenterAndExpand" />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="65"></RowDefinition>
+                        <RowDefinition Height="65"></RowDefinition>
+                        <RowDefinition Height="65"></RowDefinition>
+                        <RowDefinition Height="65"></RowDefinition>
+                        <RowDefinition Height="65"></RowDefinition>
+                        <RowDefinition Height="65"></RowDefinition>
+                        <RowDefinition Height="40"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Entry  x:Name="Cne" Text="{Binding Cne, Mode=TwoWay }" Placeholder="Cne" BackgroundColor="AliceBlue"  Grid.Row="0" Grid.ColumnSpan="2" HeightRequest="22" WidthRequest="250"  HorizontalOptions="Center"  Margin="15"></Entry>
+                    <Entry  x:Name="Nom" Text="{Binding Nom, Mode=TwoWay }" Placeholder="nom"  Grid.Row="1" Grid.ColumnSpan="2" HeightRequest="22" WidthRequest="250" BackgroundColor="AliceBlue" HorizontalOptions="Center" Margin="15"></Entry>
+                    <Entry  x:Name="Prenom" Text="{Binding Prenom, Mode=TwoWay }" Placeholder="prenom"  Grid.Row="2" Grid.ColumnSpan="2" HeightRequest="22" WidthRequest="250" BackgroundColor="AliceBlue" HorizontalOptions="Center" Margin="15"></Entry>
+                    <Entry  x:Name="Email" Text="{Binding Email, Mode=TwoWay }" Placeholder="Email"  Grid.Row="3" Grid.ColumnSpan="2" HeightRequest="22" WidthRequest="250" BackgroundColor="AliceBlue" HorizontalOptions="Center" Margin="15"></Entry>
+                    <Entry  x:Name="Telephone" Text="{Binding Telephone, Mode=TwoWay }" Placeholder="Telephone"  Grid.Row="4" Grid.ColumnSpan="2" HeightRequest="22" WidthRequest="250" BackgroundColor="AliceBlue" HorizontalOptions="Center" Margin="15"></Entry>
+                    <Entry  x:Name="Filiere" Text="{Binding Filiere, Mode=TwoWay }" Placeholder="Filiere" Grid.Row="5" Grid.ColumnSpan="2" HeightRequest="22" WidthRequest="250" BackgroundColor="AliceBlue" HorizontalOptions="Center" Margin="15"></Entry>
+
+                    <Button Grid.Row="6"  Grid.ColumnSpan="1" Grid.Column="0" Command="{Binding SubmitCommand }" Clicked="Button_Clicked_2" Text="Ajouter"  WidthRequest="30" ></Button>
+                    <Button  Grid.Row="6" Grid.ColumnSpan="1" Grid.Column="1"  Text="Cancel" Clicked="Button_Clicked_1" WidthRequest="30" ></Button>
+                    <Label Text="{Binding Message, Mode=TwoWay }" Grid.Row="7" Grid.ColumnSpan="2"  HorizontalOptions="Center"  TextColor="Red"></Label>
+
+                </Grid>
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

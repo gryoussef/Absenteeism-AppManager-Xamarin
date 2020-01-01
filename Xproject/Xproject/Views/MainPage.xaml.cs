@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xproject.Views;
 
 namespace Xproject
 {
@@ -16,6 +17,16 @@ namespace Xproject
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private async void AddStudent_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AddEtudiant());
+        }
+
+        private async void Absence_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Absence());
         }
     }
 }

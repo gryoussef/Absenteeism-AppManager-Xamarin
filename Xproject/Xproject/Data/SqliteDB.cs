@@ -18,6 +18,7 @@ namespace Xproject.Data
             {
                 var db = new SQLiteConnection(dbPath);
                 db.CreateTable<Professeur>();
+                db.CreateTable<Etudiant>();
                 db.Close();
 
             }

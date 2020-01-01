@@ -7,11 +7,30 @@
              x:Class="Xproject.MainPage"
              NavigationPage.HasNavigationBar="False">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Success login!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+
+    <StackLayout VerticalOptions="Center" Padding="20">
+        <Label Text="Home Page"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+               
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="absence" Grid.Row="0"  Clicked="Absence_Clicked" Text="Absence" />
+
+            <Button x:Name="addStudent"   Grid.Row="1" Clicked="AddStudent_Clicked" Text="Add Student" />
+
+
+            <Button x:Name="newLesson"   Grid.Row="2"   Text="New Lesson" />
+
+
+            <Button x:Name="search" Grid.Row="3"   Text="Search" />
+
+            <Button x:Name="logOut"  Grid.Row="4"   Text="Log Out" />
+
+        </Grid>
     </StackLayout>
 
 </ContentPage>
