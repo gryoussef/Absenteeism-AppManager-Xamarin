@@ -23,12 +23,12 @@
             <Button x:Name="addStudent"   Grid.Row="1" Clicked="AddStudent_Clicked" Text="Add Student" />
 
 
-            <Button x:Name="newLesson"   Grid.Row="2"   Text="New Lesson" />
+            <Button x:Name="newLesson"   Grid.Row="2" Clicked="NewLesson_Clicked"  Text="New Lesson" />
 
 
-            <Button x:Name="search" Grid.Row="3"   Text="Search" />
+            <Button x:Name="search" Grid.Row="3" Clicked="Search_Clicked"  Text="Search" />
 
-            <Button x:Name="logOut"  Grid.Row="4"   Text="Log Out" />
+            <Button x:Name="logOut"  Grid.Row="4" Clicked="LogOut_Clicked"  Text="Log Out" />
 
         </Grid>
     </StackLayout>

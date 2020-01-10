@@ -28,3 +28,5 @@ C:\Users\youss\source\repos\Xproject\Xproject\Xproject\obj\Debug\netstandard2.0\
 C:\Users\youss\source\repos\Xproject\Xproject\Xproject\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\youss\source\repos\Xproject\Xproject\Xproject\obj\Debug\netstandard2.0\Views\AddEtudiant.xaml.g.cs
 C:\Users\youss\source\repos\Xproject\Xproject\Xproject\obj\Debug\netstandard2.0\Views\Absence.xaml.g.cs
+C:\Users\youss\source\repos\Xproject\Xproject\Xproject\obj\Debug\netstandard2.0\Views\AjouterLesson.xaml.g.cs
+C:\Users\youss\source\repos\Xproject\Xproject\Xproject\obj\Debug\netstandard2.0\Views\AbsenceEtudiant.xaml.g.cs

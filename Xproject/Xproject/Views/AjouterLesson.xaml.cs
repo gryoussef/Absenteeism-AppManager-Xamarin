@@ -6,24 +6,27 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xproject.Data;
 using Xproject.ViewModels;
 
 namespace Xproject.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Absence : ContentPage
+    public partial class AjouterLesson : ContentPage
     {
         AbsenceViewModel AbsenceVM;
-        public Absence()
+        public AjouterLesson()
         {
             InitializeComponent();
             AbsenceVM = new AbsenceViewModel();
             this.BindingContext = AbsenceVM;
         }
 
-        private void ItemCheckbox_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-
+            LessonManipulation.Insert(Nom_Lesson.Text);
+            await DisplayAlert("Message", "Lesson ajoutée", "OK");
         }
     }
 }
+

@@ -25,10 +25,9 @@
                                         <StackLayout WidthRequest="327" Orientation="Horizontal" Spacing="0">
                                         <Label x:Name="prenom" HeightRequest="30" WidthRequest="106"  FontSize="20" Text="{Binding Prenom}" Margin="22,0,0,0" TextColor="Navy" VerticalOptions="CenterAndExpand" HorizontalOptions="Start"/>
                                         <Label x:Name="nom" HeightRequest="30" WidthRequest="106" FontSize="20" Margin="22,0,0,0" Text="{Binding Nom }" TextColor="Navy"  VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" />
-                                        <CheckBox  x:Name="ItemCheckbox" HeightRequest="27" WidthRequest="31" Margin="24,0,0,0" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"></CheckBox>
+                                        <CheckBox  x:Name="ItemCheckbox" HeightRequest="27"   WidthRequest="31" Margin="24,0,0,0" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"></CheckBox>
 
-                                           
-
+                                        
                                         </StackLayout>
 
                                     </Frame>

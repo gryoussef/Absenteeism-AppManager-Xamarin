@@ -11,19 +11,14 @@ using Xproject.ViewModels;
 namespace Xproject.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Absence : ContentPage
+    public partial class AbsenceEtudiant : ContentPage
     {
         AbsenceViewModel AbsenceVM;
-        public Absence()
+        public AbsenceEtudiant()
         {
             InitializeComponent();
             AbsenceVM = new AbsenceViewModel();
             this.BindingContext = AbsenceVM;
-        }
-
-        private void ItemCheckbox_CheckedChanged(object sender, CheckedChangedEventArgs e)
-        {
-
         }
     }
 }

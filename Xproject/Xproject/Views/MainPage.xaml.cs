@@ -28,5 +28,20 @@ namespace Xproject
         {
             await Navigation.PushAsync(new Absence());
         }
+
+        private async  void NewLesson_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AjouterLesson());
+        }
+
+        private async void Search_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AbsenceEtudiant());
+        }
+
+        private void LogOut_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
